@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+<link href="~/Content/foot.css" rel="stylesheet" />
+<link href="~/Content/FirstWeb.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                @Html.ActionLink("海吃海喝", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <span class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/First/Index">首页</a></li>
+                    <li>@Html.ActionLink("吃货寻觅", "About", "Home")</li>
+                    <li>@Html.ActionLink("吃货鉴赏", "About", "Home")</li>
+                    <li>@Html.ActionLink("关于", "About", "Home")</li>
+                    <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
+                </ul>
+                <span style="color:white;float:right;margin-top:15px" id="top">
+                    <span style="margin-right:15px;width:20px" id="login_top">
+                        <a href="/User/UserLogin" style="color:white">登录</a>
+                    </span>
+                    <span id="zhu_top">
+                        <a href="#" style="color:white">注册</a>
+                    </span>
+                </span>
+                </span>
+            </div>
+        </div>
+    <div id="look">
+        <div id="find">
+            <img src="~/images/IMG_20191110_194141.jpg" style="width:100px;height:50px;" id="img" />
+            <input type="text" placeholder="请输入查询内容" style="width:400px;height:38px;border:3px solid goldenrod" />
+            <input type="button" id="btn" value="搜索" />
+            <span class="phone">联系电话:
+            <span class="phone2">4008-123-123</span>
+            </span>
+
+        </div>
+     
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div id="all">
+                <!--底部服务区-->
+                <div id="foot">
+                   
+                    <!--关于我们区-->
+                    <div id="foot_center">
+                        <div class="center_left grid">
+                            <ul class="Ul grid grid_cell_1">
+                                <li class="title grid_cell_1">关于我们</li>
+                                <li class="item" grid_cell_1><a href="#">关于我们</a></li>
+                                <li class="item" grid_cell_1><a href="#">公司荣誉</a></li>
+                                <li class="item" grid_cell_1><a href="#">公司大事记</a></li>
+                                <li class="item" grid_cell_1><a href="#">联系我们</a></li>
+                                <li class="item" grid_cell_1><a href="#">诚聘英才</a></li>
+                            </ul>
+                            <ul class="Ul grid grid_cell_1">
+                                <li class="title">常见问题</li>
+                                <li class="item" grid_cell_1><a href="#">常见问题</a></li>
+                                <li class="item" grid_cell_1><a href="#">独立成团可以吗？</a></li>
+                                <li class="item" grid_cell_1><a href="#">乘机重要提示</a></li>
+                                <li class="item" grid_cell_1><a href="#">什么是包机产品？</a></li>
+                                <li class="item" grid_cell_1><a href="#">什么是自组产品？</a></li>
+                                <li class="item" grid_cell_1><a href="#">什么是单房差？</a></li>
+                            </ul>
+                            <ul class="Ul grid grid_cell_1">
+                                <li class="title">交易帮助</li>
+                                <li class="item" grid_cell_1><a href="#">支付帮助</a></li>
+                                <li class="item" grid_cell_1><a href="#">美食合同</a></li>
+                                <li class="item" grid_cell_1><a href="#">如何获取发票？</a></li>
+                                <li class="item" grid_cell_1><a href="#">付款方式有哪些？</a></li>
+                                <li class="item" grid_cell_1><a href="#">能传真签合同吗？</a></li>
+                                <li class="item" grid_cell_1><a href="#">能不签合同吗？</a></li>
+                            </ul>
+                            <ul class="Ul grid grid_cell_1">
+                                <li class="title">业务合作</li>
+                                <li class="item" grid_cell_1><a href="#">业务合作</a></li>
+                                <li class="item" grid_cell_1><a href="#">供应商合作？</a></li>
+                                <li class="item" grid_cell_1><a href="#">门店合作</a></li>
+                                <li class="item" grid_cell_1><a href="#">合作伙伴</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="center_cen">
+                            <p class="serverce">服务热线</p>
+                            <p class="num">4008-123-321</p>
+                            <p class="time">工作时间：8:00-22:00</p>
+                            <p class="tip">海吃海喝官方在线客服</p>
+                        </div>
+                        <div class="center_right">
+
+                        </div>
+                    </div>
+                    <!--友情链接区-->
+                    <div id="foot_bottom">
+                        <dl>
+                            <dd class="content">
+                                <span class="word_1">友情链接：</span>
+                                <a href="#" class="word_2">饿了么</a>
+                                <a href="#" class="word_2">美团</a>
+                                <a href="#" class="word_2">美食天下</a>
+                                <a href="#" class="word_2">食文化</a>
+                                <a href="#" class="word_2">美食网</a>
+                                <a href="#" class="word_2">海吃海喝</a>
+                                <a href="#" class="word_2">美食天下</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!--备案区-->
+                    <div id="foot_last">
+                        <p class="word_3">Copyright © 2020 - 2020 海吃海喝官方网站 经营许可证号xxxxxxxx，备案号 湘ICP备xxxxxxx号</p>
+                        <p class="word_3">技术:<a href="#" class="word_4">海吃海喝管理系统</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

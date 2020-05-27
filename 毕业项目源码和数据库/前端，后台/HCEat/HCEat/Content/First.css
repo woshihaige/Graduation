@@ -1,0 +1,55 @@
+﻿#First_All {
+height:1200px;
+width:100%;
+border:1px solid red;
+}
+#First_top {
+    /*width: 1226px;*/
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#top2 {
+    width: 100%;
+    margin: 0px auto;
+    border-bottom: 3px solid goldenrod;
+    height: 50px;
+}
+#top2 a{
+    text-decoration:none;
+    color:black;
+    line-height:50px;
+}
+
+#First_top #top2 > .grid {
+    justify-content: flex-start;
+    width: 100%;
+}
+
+    #First_top #top2 > .grid > li {
+        width: 100px;
+        height: 50px;
+        line-height: 30px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 30px;
+        float: left;
+        list-style: none;
+         
+    }
+        #First_top #top2 > .grid > li:hover{
+            background-color:orange;
+        }
+        .frist_color {
+            background-color: #FF9900;
+            color: white;
+        }
+#look {
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+
+}
