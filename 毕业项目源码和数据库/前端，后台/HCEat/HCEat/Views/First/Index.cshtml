@@ -3,21 +3,209 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-    <link href="~/Content/First.css" rel="stylesheet" />
-    <link href="~/Content/list.css" rel="stylesheet" />
-    <div id="First_All">
-        <div id="First_top">
-            <div id="top2">
-                <ul class="grid">
-                    <li class="grid_cell_1 "><a href="#">首页</a></li>
-                    <li class="grid_cell_1 "><a href="#">吃货寻觅</a></li>
-                    <li class="grid_cell_1 "><a href="#">吃货鉴赏</a></li>
-                    <li class="grid_cell_1 "><a href="#">吃货论坛</a></li>
-                </ul>
-                
+<link href="~/Content/First.css" rel="stylesheet" />
+<link href="~/Content/lunbo.css" rel="stylesheet" />
+<script src="~/Scripts/lunbo.js"></script>
+<script src="~/Scripts/lunbo2.js"></script>
+<div id="First_All">
+    <div id="First_top">
+       
+        <div class="des-menu-nav">
+            <div class="des-nav-box">
+                <div class="des-column">
+                    <div class="des-column-list"style="opacity:0.8">
+                        <div class="hd des-column-head" style="opacity:0.8">
+                            <ul>
+                                <li class="item">
+                                    <h2>菜谱菜系</h2>
+                                    <div class="des-column-link">
+                                        <a href="#" class="des-red">湘菜</a>
+                                        <a href="#" class="des-red">粤菜</a>
+                                        <a href="#">川菜</a>
+                                        <a href="#" class="des-red">鲁菜</a>
+                                        <a href="#">潮汕菜</a>
+                                        <a href="#">日式</a>
+                                        <a href="#" class="des-red">法国菜</a>
+                                        <a href="#">西餐</a>
+                                        <a href="#" class="des-red">中式</a>
+                                        <a href="#" class="des-red">浙菜</a>
+                                        <a href="#">混搭</a>
+                                        <a href="#" class="des-red">美式</a>
+                                    </div>
+                                    <ul class="product-wrap product-wrap001">
+                                        <li>
+                                            <h2>口味</h2>
+                                            <div class="des-column-link">
+                                                <a href="#">香辣</a>
+                                                <a href="#">清甜</a>
+                                                <a href="#">鲜香</a>
+                                                <a href="#">热量</a>
+                                                <a href="#">开胃</a>
+                                                <a href="#">精致</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h2>风格</h2>
+                                            <div class="des-column-link">
+                                                <a href="#">欧式</a>
+                                                <a href="#">中式</a>
+                                                <a href="#">日式</a>
+                                                <a href="#">东南亚</a>
+                                                <a href="#">美式</a>
+                                                <a href="#">韩式</a>
+                                                <a href="#">地中海</a>
+                                                <a href="#">泰式</a>
+                                                <a href="#">混搭</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <h2>做法类型</h2>
+                                    <div class="des-column-link">
+                                        <a href="#" class="des-red">清蒸</a>
+                                        <a href="#" class="des-red">红烧</a>
+                                        <a href="#">烧烤</a>
+                                        <a href="#" class="des-red">油炸</a>
+                                        <a href="#">炖煮</a>
+                                        <a href="#">干锅</a>
+                                        <a href="#" class="des-red"></a>
+                                        <a href="#">炒制</a>
+                                        <a href="#" class="des-red">烘焙</a>
+                                    </div>
+                                    <ul class="product-wrap product-wrap002">
+                                        <li>
+                                            <h2>菜品</h2>
+                                            <div class="des-column-link">
+                                                <a href="#">干烧花菜</a>
+                                                <a href="#">八大碗</a>
+                                                <a href="#">龙虾焗意面</a>
+                                                <a href="#">牛排</a>
+                                                <a href="#">蛋糕</a>
+                                                <a href="#">红烧肉</a>
+                                                <a href="#">烤串</a>
+                                                <a href="#">啤酒鸭</a>
+                                                <a href="#">羊排</a>
+                                                <a href="#">紫菜蛋花汤</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item item-clear">
+                                    <h2>推荐菜品</h2>
+                                    <div class="des-column-link">
+                                        <a href="#" class="des-red">红烧茄子</a>
+                                        <a href="#">香芋排骨</a>
+                                        <a href="#" class="des-red">锅包肉</a>
+                                        <a href="#">蚵仔煎</a>
+                                        <a href="#">东坡肉</a>
+                                        <a href="#" class="des-red">地三鲜</a>
+                                        <a href="#">剁椒鱼头</a>
+                                        <a href="#" class="des-red">红烧狮子头</a>
+                                        <a href="#" class="des-red">香煎鲫鱼</a>
+                                    </div>
+                                    <ul class="product-wrap product-wrap003">
+                                        <li>
+                                            <h2>推荐城市</h2>
+                                            <div class="des-column-link">
+                                                <a href="#">北京</a>
+                                                <a href="#">上海</a>
+                                                <a href="#">广州</a>
+                                                <a href="#">深圳</a>
+                                                <a href="#">南京</a>
+                                                <a href="#">天津</a>
+                                                <a href="#">杭州</a>
+                                                <a href="#">武汉</a>
+                                                <a href="#">成都</a>
+                                                <a href="#">西安</a>
+                                                <a href="#">福州</a>
+                                                <a href="#">苏州</a>
+                                                <a href="#">郑州</a>
+                                                <a href="#">合肥</a>
+                                                <a href="#">贵阳</a>
+                                                <a href="#">宁波</a>
+                                                <a href="#">长沙</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="First_center"></div>
-        <div id="First_foot"></div>
+        <div class="des-banners">
+            <div class="hd des-banners-circle">
+                <ul>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bd des-banners-image" >
+                <ul>
+                    <li class="des-banners-image-001">
+                        <a href="#"></a>
+                    </li>
+                    <li class="des-banners-image-002">
+                        <a href="#"></a>
+                    </li>
+                    <li class="des-banners-image-003">
+                        <a href="#"></a>
+                    </li>
+                    <li class="des-banners-image-004">
+                        <a href="#"></a>
+                    </li>
+                    <li class="des-banners-image-005">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+            $(function () {//左侧二级菜单
+
+                $('.des-column-head .item').hover(function () {
+
+                    $(this).addClass('active').find('s').hide();
+
+                    $(this).find('.product-wrap').show();
+
+                }, function () {
+
+                    $(this).removeClass('active').find('s').show();
+
+                    $(this).find('.product-wrap').hide();
+
+                });
+
+            });
+
+            jQuery(".des-banners").slide({//首页轮播
+                mainCell: ".bd ul",
+                effect: "leftLoop",
+                autoPlay: true,
+                trigger: "click",
+                delayTime: 100
+            });
+
+            jQuery(".des-menu-nav").slide({//导航二级菜单
+                type: "menu",
+                titCell: "dd",
+                targetCell: "ul",
+                delayTime: 0,
+                defaultPlay: false,
+                returnDefault: true
+            });
+
+        </script>
     </div>
+    <div id="First_center"></div>
+
+    <div id="First_foot"></div>
+</div>
 

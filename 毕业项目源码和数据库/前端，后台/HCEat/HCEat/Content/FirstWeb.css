@@ -12,6 +12,7 @@
     border: 5px solid goldenrod;
     margin-top:20px;
     border-radius:5px;
+   
 }
 #img{
     position:relative;
@@ -26,4 +27,51 @@
     font-size:22px;
     color:goldenrod;
    
+}
+#find{
+    position:relative;
+}
+#top2 {
+  margin-left:5px;
+    border-bottom: 3px solid goldenrod;
+    height: 50px;
+}
+
+#top2 a {
+        text-decoration: none;
+        color: black;
+        line-height: 50px;
+    }
+
+#top2 > .grid {
+    position:relative;
+    left:200px;
+  width:auto;
+  height:auto;
+  white-space:nowrap;
+}
+
+ #top2 > .grid > li {
+   float:left;
+   width:100px;
+   height:50px;
+  list-style:none;
+   text-align:center;
+    }
+
+.grid > li:hover {
+            background-color: orange;
+        }
+
+.frist_color {
+    background-color: #FF9900;
+    color: white;
+}
+
+#look {
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
 }
