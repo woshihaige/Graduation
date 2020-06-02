@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AppreController.cs" />
     <Compile Include="Controllers\FirstController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Aprciate.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -148,6 +150,7 @@
     <Content Include="images\IMG_20191110_194141.jpg" />
     <Content Include="images\Login.jpg" />
     <Content Include="images\logo.jpg" />
+    <Content Include="Scripts\Aprciate.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -162,6 +165,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jsmin.js" />
     <Content Include="Scripts\lunbo.js" />
     <Content Include="Scripts\lunbo2.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
@@ -182,6 +186,7 @@
     <Content Include="Views\Shared\_LayoutAll.cshtml" />
     <Content Include="Views\First\Index.cshtml" />
     <Content Include="Views\User\UserLogin.cshtml" />
+    <Content Include="Views\Appre\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

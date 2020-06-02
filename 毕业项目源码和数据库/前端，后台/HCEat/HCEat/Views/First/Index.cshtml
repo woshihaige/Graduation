@@ -5,10 +5,10 @@
 }
 <link href="~/Content/First.css" rel="stylesheet" />
 <link href="~/Content/lunbo.css" rel="stylesheet" />
+
 <script src="~/Scripts/lunbo.js"></script>
 <script src="~/Scripts/lunbo2.js"></script>
 <link href="~/Content/First_center.css" rel="stylesheet" />
-
 <div id="First_All">
     @* 美食轮播区 *@
     <div id="First_top">
@@ -171,7 +171,7 @@
         <script type="text/javascript">
 
             $(function () {//左侧二级菜单
-
+             
                 $('.des-column-head .item').hover(function () {
 
                     $(this).addClass('active').find('s').hide();
@@ -187,14 +187,15 @@
                 });
 
             });
-
-            jQuery(".des-banners").slide({//首页轮播
+            
+           jQuery(".des-banners").slide({//首页轮播
                 mainCell: ".bd ul",
                 effect: "leftLoop",
                 autoPlay: true,
                 trigger: "click",
                 delayTime: 100
             });
+      
 
             jQuery(".des-menu-nav").slide({//导航二级菜单
                 type: "menu",
