@@ -3,223 +3,98 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<link href="~/Content/Aprciate.css" rel="stylesheet" />
-<script src="~/Scripts/jsmin.js"></script>
 <script src="~/Scripts/Aprciate.js"></script>
-<div class="cards">
-    <div class="card">
-        <img src="~/images/Login.jpg">
-        <div class="card-title">
-            <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-        </div>
-        <div class="card-flap flap1">
-            <div class="card-description">
-                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-                <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-        </div>
+<script src="~/Scripts/Aprciate2.js"></script>
+<link href="~/Content/Aprciate.css" rel="stylesheet" />
+<div class="cation-content">
+    <div style="height:50px"></div>
+    <!-- 可以删除 -->
+
+    <div class="cation-middle" style="height:300px;">
+        <div class="crumbs"><a href="/First/Index">首页</a>&nbsp;>&nbsp;吃货鉴赏</div>
+        <dl class="cation-list">
+            <dt>口味</dt>
+            <dd>
+                <a href="#" rel="" name="huxing" class="all on">不限</a>
+                <a href="#" rel="一居室" name="huxing" class="default">香辣</a>
+                <a href="#" rel="二居室" name="huxing" class="default">开胃</a>
+                <a href="#" rel="三居室" name="huxing" class="default">清爽</a>
+                <a href="#" rel="四居室" name="huxing" class="default">热量</a>
+            </dd>
+        </dl>
+        <dl class="cation-list">
+            <dt>做法</dt>
+            <dd>
+                <a href="#" rel="" name="mianji" class="all on">不限</a>
+                <a href="#" rel="60m²以下" name="mianji" class="default">清蒸</a>
+                <a href="#" rel="60-80m²" name="mianji" class="default">红烧</a>
+                <a href="#" rel="100-120m²" name="mianji" class="default">油炸</a>
+                <a href="#" rel="120-180m²" name="mianji" class="default">煲汤</a>
+                <a href="#" rel="180m²以上" name="mianji" class="default">烧烤</a>
+            </dd>
+        </dl>
+        <dl class="cation-list">
+            <dt>地区</dt>
+            <dd>
+                <a href="#" rel="" name="yusuan" class="all on">不限</a>
+                <a href="#" rel="5万以下" name="yusuan" class="default">长沙</a>
+                <a href="#" rel="5-8万" name="yusuan" class="default">武汉</a>
+                <a href="#" rel="8-15万" name="yusuan" class="default">北京</a>
+                <a href="#" rel="15万以上" name="yusuan" class="default">杭州</a>
+            </dd>
+        </dl>
+        <dl class="cation-list">
+            <dt>类型</dt>
+            <dd>
+                <a href="#" rel="" name="fengge" class="all on">不限</a>
+                <a href="#" rel="现代简约" name="fengge" class="default">湘菜</a>
+                <a href="#" rel="美式田园" name="fengge" class="default">粤菜</a>
+                <a href="#" rel="新中式" name="fengge" class="default">鲁菜</a>
+                <a href="#" rel="北欧" name="fengge" class="default">浙菜</a>
+                <a href="#" rel="工业" name="fengge" class="default">西餐</a>
+                <a href="#" rel="欧式" name="fengge" class="default">欧式</a>
+                <a href="#" rel="其他" name="fengge" class="default">其他</a>
+            </dd>
+        </dl>
     </div>
 
-    <div class="card">
-        <img src="~/images/Login.jpg">
-        <div class="card-title">
-            <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-        </div>
-        <div class="card-flap flap1">
-            <div class="card-description">
-                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-                <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
+    <div class="case_list">
+        <ul>
+            <li>
+                <div class="img">
+                    <a href="javascript:;"><img src="~/images/Login.jpg" /></a>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="~/images/Login.jpg">
-        <div class="card-title">
-            <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-        </div>
-        <div class="card-flap flap1">
-            <div class="card-description">
-                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-                <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
+                <p>
+                    <a href="javascript:;">红烧肉</a><span>红烧</span><span>香甜可口，肥而不腻</span><span>用料.....</span>
+                </p>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="javascript:;"><img src="~/images/Login.jpg" /></a>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="img/wave2.jpg">
-        <div class="card-title">
-            <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-        </div>
-        <div class="card-flap flap1">
-            <div class="card-description">
-                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-                <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
+                <p>
+                    <a href="javascript:;">红烧肉</a><span>红烧</span><span>香甜可口，肥而不腻</span><span>用料.....</span>
+                </p>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="javascript:;"><img src="~/images/Login.jpg" /></a>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="img/wave3.jpg">
-        <div class="card-title">
-            <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-        </div>
-        <div class="card-flap flap1">
-            <div class="card-description">
-                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-                <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="img/wave1.jpg">
-        <div class="card-title">
-            <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-        </div>
-        <div class="card-flap flap1">
-            <div class="card-description">
-                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-                <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="img/wave3.jpg">
-        <div class="card-title">
-            <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-        </div>
-        <div class="card-flap flap1">
-            <div class="card-description">
-                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-                <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="img/wave1.jpg">
-        <div class="card-title">
-            <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-        </div>
-        <div class="card-flap flap1">
-            <div class="card-description">
-                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-                <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="img/wave2.jpg">
-        <div class="card-title">
-            <a href="#" class="toggle-info btn">
-                <span class="left"></span>
-                <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-        </div>
-        <div class="card-flap flap1">
-            <div class="card-description">
-                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-                <div class="card-actions">
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-        </div>
+                <p>
+                    <a href="javascript:;">红烧肉</a><span>红烧</span><span>香甜可口，肥而不腻</span><span>用料.....</span>
+                </p>
+            </li>
+        </ul>
     </div>
 </div>
+
+
+<script type="text/javascript">
+    $(function () {
+        new SelectTag({
+            child: ".default", //所有默认
+            over: 'on', //当前选中
+            all: ".all" // 默认全部
+        });
+    })
+</script>

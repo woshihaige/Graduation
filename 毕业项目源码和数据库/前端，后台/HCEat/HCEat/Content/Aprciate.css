@@ -1,203 +1,162 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
-
+﻿html,
 body {
-    color: #4f585e;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-rendering: optimizeLegibility;
+    background: #fff;
 }
 
-a.btn {
-    background: #0096a0;
-    border-radius: 4px;
-    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-    display: inline-block;
-    padding: 6px 30px 8px;
-    position: relative;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    border: 0;
+}
+
+a {
     text-decoration: none;
-    -webkit-transition: all 0.1s 0s ease-out;
-    transition: all 0.1s 0s ease-out;
+    color: #4c4c4c;
 }
 
-.no-touch a.btn:hover {
-    background: #00a2ad;
-    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-    -webkit-transition: all 0.25s 0s ease-out;
-    transition: all 0.25s 0s ease-out;
+img {
+    border: 0;
 }
 
-.no-touch a.btn:active,
-a.btn:active {
-    background: #008a93;
-    box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
-    -webkit-transform: translate3d(0, 1px, 0);
-    transform: translate3d(0, 1px, 0);
-    -webkit-transition: all 0.025s 0s ease-out;
-    transition: all 0.025s 0s ease-out;
+a:hover {
+    color: #ff6600;
 }
 
-div.cards {
-    margin: 80px auto;
-    max-width: 960px;
-    text-align: center;
+
+/* 必要布局样式css */
+
+.cation-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top:-45px;
 }
 
-div.card {
-    background: #ffffff;
-    display: inline-block;
-    margin: 8px;
-    max-width: 300px;
-    -webkit-perspective: 1000;
-    perspective: 1000;
-    position: relative;
-    text-align: left;
-    -webkit-transition: all 0.3s 0s ease-in;
-    transition: all 0.3s 0s ease-in;
-    z-index: 1;
+.cation-middle {
+    line-height: 48px;
+    font-size: 14px;
+    border: 1px solid #c5c5c5
 }
 
-    div.card img {
-        max-width: 300px;
+    .cation-middle .crumbs {
+        padding-left: 35px;
+        color: #444;
+        font-size: 16px;
+        line-height: 48px;
+        border-bottom: 1px solid #c5c5c5;
     }
 
-    div.card div.card-title {
-        background: #ffffff;
-        padding: 6px 15px 10px;
+.cation-list {
+    overflow: hidden;
+}
+
+    .cation-list dt {
+        float: left;
+        width: 190px;
+        font-weight: 700;
+        line-height: 48px;
         position: relative;
-        z-index: 0;
-    }
-
-        div.card div.card-title a.toggle-info {
-            border-radius: 32px;
-            height: 32px;
-            padding: 0;
-            position: absolute;
-            right: 15px;
-            top: 10px;
-            width: 32px;
-        }
-
-            div.card div.card-title a.toggle-info span {
-                background: #ffffff;
-                display: block;
-                height: 2px;
-                position: absolute;
-                top: 16px;
-                -webkit-transition: all 0.15s 0s ease-out;
-                transition: all 0.15s 0s ease-out;
-                width: 12px;
-            }
-
-                div.card div.card-title a.toggle-info span.left {
-                    right: 14px;
-                    -webkit-transform: rotate(45deg);
-                    transform: rotate(45deg);
-                }
-
-                div.card div.card-title a.toggle-info span.right {
-                    left: 14px;
-                    -webkit-transform: rotate(-45deg);
-                    transform: rotate(-45deg);
-                }
-
-        div.card div.card-title h2 {
-            font-size: 24px;
-            font-weight: 700;
-            letter-spacing: -0.05em;
-            margin: 0;
-            padding: 0;
-        }
-
-            div.card div.card-title h2 small {
-                display: block;
-                font-size: 18px;
-                font-weight: 600;
-                letter-spacing: -0.025em;
-            }
-
-    div.card div.card-description {
-        padding: 0 15px 10px;
-        position: relative;
-        font-size: 14px;
-    }
-
-    div.card div.card-actions {
-        box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
-        padding: 10px 15px 20px;
+        color: #4c4c4c;
         text-align: center;
+        font-size: 16px;
+        background: #f4f4f4;
+        border-bottom: 1px solid #c5c5c5;
+        border-right: 1px solid #c5c5c5;
     }
 
-    div.card div.card-flap {
-        background: #d9d9d9;
-        position: absolute;
-        width: 100%;
-        -webkit-transform-origin: top;
-        transform-origin: top;
-        -webkit-transform: rotateX(-90deg);
-        transform: rotateX(-90deg);
+    .cation-list:last-child dt {
+        border-bottom: none;
     }
 
-    div.card div.flap1 {
-        -webkit-transition: all 0.3s 0.3s ease-out;
-        transition: all 0.3s 0.3s ease-out;
-        z-index: -1;
+    .cation-list:last-child dd {
+        border-bottom: none;
     }
 
-    div.card div.flap2 {
-        -webkit-transition: all 0.3s 0s ease-out;
-        transition: all 0.3s 0s ease-out;
-        z-index: -2;
+    .cation-list dd {
+        margin-left: 190px;
+        overflow: hidden;
+        border-bottom: 1px solid #c5c5c5;
+     
     }
 
-div.cards.showing div.card {
-    cursor: pointer;
-    opacity: 0.6;
-    -webkit-transform: scale(0.88);
-    transform: scale(0.88);
-}
-
-.no-touch div.cards.showing div.card:hover {
-    opacity: 0.94;
-    -webkit-transform: scale(0.92);
-    transform: scale(0.92);
-}
-
-div.card.show {
-    opacity: 1 !important;
-    -webkit-transform: scale(1) !important;
-    transform: scale(1) !important;
-}
-
-    div.card.show div.card-title a.toggle-info {
-        background: #ff6666 !important;
-    }
-
-        div.card.show div.card-title a.toggle-info span {
-            top: 15px;
+        .cation-list dd a {
+            color: #444;
+            font-size: 14px;
+            width: 80px;
+            text-align: left;
+            height: 48px;
+            line-height: 48px;
+            display: inline-block;
+            float: left;
+            margin-left: 40px;
         }
 
-            div.card.show div.card-title a.toggle-info span.left {
-                right: 10px;
+            .cation-list dd a.all {
+                text-align: center;
             }
 
-            div.card.show div.card-title a.toggle-info span.right {
-                left: 10px;
+            .cation-list dd a.on,
+            .cation-list a:hover {
+                color: #ff6600;
+                font-weight: 600;
+             
             }
 
-    div.card.show div.card-flap {
-        background: #ffffff;
-        -webkit-transform: rotateX(0deg);
-        transform: rotateX(0deg);
+.case_list {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+    .case_list ul li {
+        width: 390px;
+        float: left;
+        margin-right: 15px;
+        overflow: hidden;
     }
 
-    div.card.show div.flap1 {
-        -webkit-transition: all 0.3s 0s ease-out;
-        transition: all 0.3s 0s ease-out;
-    }
+        .case_list ul li:nth-child(3n) {
+            margin-right: 0;
+        }
 
-    div.card.show div.flap2 {
-        -webkit-transition: all 0.3s 0.2s ease-out;
-        transition: all 0.3s 0.2s ease-out;
-    }
+        .case_list ul li .img {
+            float: left;
+            width: 100%;
+            height: 245px;
+            overflow: hidden;
+        }
+
+        .case_list ul li img {
+            max-width: 100%;
+            height: 245px;
+            display: block;
+        }
+
+            .case_list ul li img:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+                transition: all linear .5s;
+            }
+
+        .case_list ul li p {
+            float: left;
+            color: #444;
+            width: 100%;
+            border: 1px solid #c5c5c5;
+            border-top: none;
+            height: 68px;
+            line-height: 68px;
+            padding: 0 20px;
+            font-size: 18px;
+        }
+
+            .case_list ul li p span {
+                font-size: 14px;
+                color: #6a6a6a;
+                padding-left: 15px;
+            }
