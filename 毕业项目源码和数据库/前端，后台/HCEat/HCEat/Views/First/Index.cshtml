@@ -4,17 +4,17 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link href="~/Content/First.css" rel="stylesheet" />
-<link href="~/Content/lunbo.css" rel="stylesheet" />
 
-<script src="~/Scripts/lunbo.js"></script>
-<script src="~/Scripts/lunbo2.js"></script>
-<link href="~/Content/First_center.css" rel="stylesheet" />
+<link href="~/Content/Lun.css" rel="stylesheet" />
+<script src="~/Scripts/Lun3.js"></script>
+<link href="~/Content/Pai.css" rel="stylesheet" />
+
 <div id="First_All">
     @* 美食轮播区 *@
-    <div id="First_top">
-       
-        <div class="des-menu-nav">
-            <div class="des-nav-box">
+    @*<div id="First_top">
+
+        <div class="des-menu-nav">*@
+    @*<div class="des-nav-box">
                 <div class="des-column">
                     <div class="des-column-list"style="opacity:0.8">
                         <div class="hd des-column-head" style="opacity:0.8">
@@ -137,8 +137,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="des-banners">
+        </div>*@
+    @*<div class="des-banners">
             <div class="hd des-banners-circle">
                 <ul>
                     <li class="on"></li>
@@ -167,11 +167,11 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <script type="text/javascript">
+        </div>*@
+    @*<script type="text/javascript">
 
             $(function () {//左侧二级菜单
-             
+
                 $('.des-column-head .item').hover(function () {
 
                     $(this).addClass('active').find('s').hide();
@@ -187,7 +187,7 @@
                 });
 
             });
-            
+
            jQuery(".des-banners").slide({//首页轮播
                 mainCell: ".bd ul",
                 effect: "leftLoop",
@@ -195,7 +195,7 @@
                 trigger: "click",
                 delayTime: 100
             });
-      
+
 
             jQuery(".des-menu-nav").slide({//导航二级菜单
                 type: "menu",
@@ -206,64 +206,110 @@
                 returnDefault: true
             });
 
-        </script>
+        </script>*@
+    @*</div>*@
+
+    <div id="shutter" class="shutter">
+        <ul>
+            <li><a href="#"><img src="~/images/banner1.jpg" alt="" /></a></li>
+            <li><a href="#"><img src="~/images/banner2.jpg" /></a></li>
+            <li><a href="#"><img src="~/images/banner4.jpg" alt="" /></a></li>
+        </ul>
     </div>
+
+    <script type="text/javascript">
+<!--
+        var shutterH = new Hongru.shutter.init('shutterH', {
+            id: 'shutter'
+        });
+        var isIE = !!window.ActiveXObject;
+        var isIE6 = isIE && !window.XMLHttpRequest;
+        if (isIE) {
+            if (isIE6 != "ie6") {
+
+                changecss();
+
+                window.onresize = function () {
+                    changecss();
+                }
+            }
+        }
+        if (!isIE) {
+
+
+            changecss();
+
+            window.onresize = function () {
+                changecss();
+            }
+
+        }
+        function changecss() {
+            var kuandu = document.documentElement.clientWidth;
+            var shutterW = $("#shutter").width();
+            var left = (kuandu - shutterW) / 2;
+            $("#shutter").css("left", left);
+        }
+        // -->
+    </script>'
     @* 瀑布流美食区域 *@
-    <div id="First_center">
+    <div id="First_center" >
         <div id="container">
             <img src="~/images/biaozhi.PNG" />
-            <span class="word_5" >
-                美食区
-            </span>
-            <hr style=" border:1px solid gold"/>
-            <ul class="col">
-                <li>
-                    <div class="water_pic"><a href=""><img src="~/images/Login.jpg" alt="" /></a></div>
-                    <div class="water_user">红烧茄子</div>
-                    <div class="water_option">
-                        <a href="" class="option_item">收藏 4</a>
-                        <span class="split"></span>
-                        <a href="" class="option_item option_comt">评论 8</a>
-                        <span class="split"></span>
-                        <a href="" class="option_item option_relay">转播 124</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="water_pic"><a href=""><img src="img/2.jpg" alt="" /></a></div>
-                    <div class="water_user">美女小清新_2</div>
-                    <div class="water_option">
-                        <a href="" class="option_item">收藏 4</a>
-                        <span class="split"></span>
-                        <a href="" class="option_item option_comt">评论 8</a>
-                        <span class="split"></span>
-                        <a href="" class="option_item option_relay">转播 124</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="water_pic"><a href=""><img src="img/3.jpg" alt="" /></a></div>
-                    <div class="water_user">美女小清新_3</div>
-                    <div class="water_option">
-                        <a href="" class="option_item">收藏 4</a>
-                        <span class="split"></span>
-                        <a href="" class="option_item option_comt">评论 8</a>
-                        <span class="split"></span>
-                        <a href="" class="option_item option_relay">转播 124</a>
-                    </div>
-                </li>
-            </ul>
+        <span class="word_5">
+            美食区
+        </span>
+        <hr style=" border:1px solid gold" />
+        </div>
+            <div class="clearfix"> </div>
+            <div class="header-grids" style="background-color:azure">
+                <div class="col-md-4 header-grid-info">
+                    <a href="single.html">
+                        <div class="header-grid gray">
+                            <div class="header-grid-img gray-grid">
+                                <img src="~/images/1.jpg" alt="">
+                                <h3>sandwich</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    neque erat, iaculis faucibus laoreet nec
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 header-grid-info">
+                    <a href="single.html">
+                        <div class="header-grid">
+                            <div class="header-grid-img">
+                                <img src="~/images/2.jpg" alt="">
+                                <h3>chinese food</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    neque erat, iaculis faucibus laoreet nec
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 header-grid-info">
+                    <a href="single.html">
+                        <div class="header-grid blue">
+                            <div class="header-grid-img blue-grid">
+                                <img src="~/images/3.jpg" alt="">
+                                <h3>pizza</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    neque erat, iaculis faucibus laoreet nec
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
 
-            <ul class="col"></ul>
-
-            <ul class="col" style="margin-right:0"></ul>
-
-            <a href="javascript:" class="loadMeinvMOre" id="loadMeinvMOre">加载更多</a>
-
-        </div><!--container end-->
-
-        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-        <script src="~/Scripts/First_center.js"></script>
         @* 瀑布流js部分代码 *@
-        <script type="text/javascript">
+            @*<script type="text/javascript">
             $(function () {
                 //url data function dataType
                 function loadMeinv() {
@@ -304,10 +350,10 @@
                 });
 
             })
-        </script>
+        </script>*@
 
-    </div>
-    
+        </div>
+
     <div id="First_foot"></div>
 </div>
 

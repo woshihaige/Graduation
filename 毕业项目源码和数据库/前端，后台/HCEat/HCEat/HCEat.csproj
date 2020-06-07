@@ -141,11 +141,19 @@
     <Content Include="Content\foot.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\Login2.css" />
+    <Content Include="Content\Lun.css" />
     <Content Include="Content\lunbo.css" />
+    <Content Include="Content\Pai.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner4.jpg" />
     <Content Include="images\biaozhi.PNG" />
     <Content Include="images\IMG_20191110_194141.jpg" />
     <Content Include="images\Login.jpg" />
@@ -167,6 +175,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jsmin.js" />
+    <Content Include="Scripts\Lun3.js" />
     <Content Include="Scripts\lunbo.js" />
     <Content Include="Scripts\lunbo2.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
