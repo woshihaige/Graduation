@@ -124,6 +124,7 @@
     <Compile Include="Controllers\FirstController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\WayController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -144,6 +145,8 @@
     <Content Include="Content\Lun.css" />
     <Content Include="Content\lunbo.css" />
     <Content Include="Content\Pai.css" />
+    <Content Include="Content\Way.css" />
+    <Content Include="Content\WayColor.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -158,6 +161,8 @@
     <Content Include="images\IMG_20191110_194141.jpg" />
     <Content Include="images\Login.jpg" />
     <Content Include="images\logo.jpg" />
+    <Content Include="images\Way.jpg" />
+    <Content Include="images\Way2.jpg" />
     <Content Include="Scripts\Aprciate.js" />
     <Content Include="Scripts\Aprciate2.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -197,6 +202,7 @@
     <Content Include="Views\First\Index.cshtml" />
     <Content Include="Views\User\UserLogin.cshtml" />
     <Content Include="Views\Appre\Index.cshtml" />
+    <Content Include="Views\Way\WayLook.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
