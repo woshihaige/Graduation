@@ -3,6 +3,32 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style type="text/css">
+ 
+    #wai{
+height:500px;
+border:1px solid red;
+       }
+ .card{
+         float:left;
+        margin-left: 83px;
+        border: 1px solid lightgrey;
+        margin-top: 50px;
+        width: 18rem;
+    }
+
+        .card:hover {
+            position: relative;
+            top: 5px;
+            left: 0px;
+            box-shadow:1px 1px 1px 1px lightgrey;
+        }
+
+    .card-img-top {
+        margin-left: 18px;
+        margin-top: 5px;
+    }
+</style>
 <script src="~/Scripts/Aprciate.js"></script>
 <script src="~/Scripts/Aprciate2.js"></script>
 <link href="~/Content/Aprciate.css" rel="stylesheet" />
@@ -58,36 +84,67 @@
         </dl>
     </div>
 
-    <div class="case_list">
-        <ul>
-            <li>
-                <div class="img">
-                    <a href="javascript:;"><img src="~/images/Login.jpg" /></a>
-                </div>
-                <p>
-                    <a href="javascript:;">红烧肉</a><span>红烧</span><span>香甜可口，肥而不腻</span><span>用料.....</span>
-                </p>
-            </li>
-            <li>
-                <div class="img">
-                    <a href="javascript:;"><img src="~/images/Login.jpg" /></a>
-                </div>
-                <p>
-                    <a href="javascript:;">红烧肉</a><span>红烧</span><span>香甜可口，肥而不腻</span><span>用料.....</span>
-                </p>
-            </li>
-            <li>
-                <div class="img">
-                    <a href="javascript:;"><img src="~/images/Login.jpg" /></a>
-                </div>
-                <p>
-                    <a href="javascript:;">红烧肉</a><span>红烧</span><span>香甜可口，肥而不腻</span><span>用料.....</span>
-                </p>
-            </li>
-        </ul>
+    @*<div class="case_list">
+            <ul>
+                <li>
+                    <div class="img">
+                        <a href="javascript:;"><img src="~/images/Login.jpg" /></a>
+                    </div>
+                    <p>
+                        <a href="javascript:;">红烧肉</a><span>红烧</span><span>香甜可口，肥而不腻</span><span>用料.....</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="javascript:;"><img src="~/images/Login.jpg" /></a>
+                    </div>
+                    <p>
+                        <a href="javascript:;">红烧肉</a><span>红烧</span><span>香甜可口，肥而不腻</span><span>用料.....</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="img">
+                        <a href="javascript:;"><img src="~/images/Login.jpg" /></a>
+                    </div>
+                    <p>
+                        <a href="javascript:;">红烧肉</a><span>红烧</span><span>香甜可口，肥而不腻</span><span>用料.....</span>
+                    </p>
+                </li>
+            </ul>
+        </div>*@
+
+<div style="border:1px solid lightblue" id="wai">
+    <div class="card" style="width: 28rem;background-color:white">
+        <img src="~/images/2.jpg" class="card-img-top" alt="..." style="width:24rem">
+        <div class="card-body">
+            <h5 class="card-title">大海秘制小汉堡</h5>
+            <p class="card-text">瞧一瞧看一看咯</p>
+            <hr />
+            <a href="/Way/WayLook" class="btn btn-primary">去看看不咯</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 28rem;background-color:white">
+        <img src="~/images/2.jpg" class="card-img-top" alt="..." style="width:24rem">
+        <div class="card-body">
+            <h5 class="card-title">大海秘制小汉堡</h5>
+            <p class="card-text">瞧一瞧看一看咯</p>
+            <hr />
+            <a href="/Way/WayLook" class="btn btn-primary">去看看不咯</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 28rem;background-color:white">
+        <img src="~/images/2.jpg" class="card-img-top" alt="..." style="width:24rem">
+        <div class="card-body">
+            <h5 class="card-title">大海秘制小汉堡</h5>
+            <p class="card-text">瞧一瞧看一看咯</p>
+            <hr />
+            <a href="/Way/WayLook" class="btn btn-primary">去看看不咯</a>
+        </div>
     </div>
 </div>
-
+</div>
 
 <script type="text/javascript">
     $(function () {
