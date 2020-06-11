@@ -17,5 +17,9 @@ namespace HCEat.Controllers
         {
             return View();
         }
+        public ActionResult UserCenter()
+        {
+            return View();
+        }
     }
 }
