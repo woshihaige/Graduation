@@ -145,6 +145,7 @@
     <Content Include="Content\Lun.css" />
     <Content Include="Content\lunbo.css" />
     <Content Include="Content\Pai.css" />
+    <Content Include="Content\UserCenter.css" />
     <Content Include="Content\Way.css" />
     <Content Include="Content\WayColor.css" />
     <Content Include="favicon.ico" />
