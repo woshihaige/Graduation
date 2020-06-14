@@ -131,6 +131,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AddmyInfo3.css" />
+    <Content Include="Content\AddmyInfo3_2.css" />
     <Content Include="Content\Aprciate.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -144,6 +146,7 @@
     <Content Include="Content\Login2.css" />
     <Content Include="Content\Lun.css" />
     <Content Include="Content\lunbo.css" />
+    <Content Include="Content\myinfo3.css" />
     <Content Include="Content\Pai.css" />
     <Content Include="Content\UserCenter.css" />
     <Content Include="Content\Way.css" />
@@ -164,6 +167,9 @@
     <Content Include="images\logo.jpg" />
     <Content Include="images\Way.jpg" />
     <Content Include="images\Way2.jpg" />
+    <Content Include="Scripts\AddmyInfo3.js" />
+    <Content Include="Scripts\AddmyInfo3_2.js" />
+    <Content Include="Scripts\AddmyInfo3_3.js" />
     <Content Include="Scripts\Aprciate.js" />
     <Content Include="Scripts\Aprciate2.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -205,6 +211,9 @@
     <Content Include="Views\Appre\Index.cshtml" />
     <Content Include="Views\Way\WayLook.cshtml" />
     <Content Include="Views\User\UserCenter.cshtml" />
+    <Content Include="Views\Shared\_LayoutUser.cshtml" />
+    <Content Include="Views\User\myInfo3.cshtml" />
+    <Content Include="Views\User\AddmyInfo3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

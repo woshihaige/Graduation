@@ -164,7 +164,7 @@ D:\海吃海喝\毕业项目源码和数据库\前端，后台\HCEat\HCEat\bin\z
 D:\海吃海喝\毕业项目源码和数据库\前端，后台\HCEat\HCEat\bin\zh-Hans\System.Web.WebPages.resources.dll
 D:\海吃海喝\毕业项目源码和数据库\前端，后台\HCEat\HCEat\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 D:\海吃海喝\毕业项目源码和数据库\前端，后台\HCEat\HCEat\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-D:\海吃海喝\毕业项目源码和数据库\前端，后台\HCEat\HCEat\obj\Debug\HCEat.csprojAssemblyReference.cache
 D:\海吃海喝\毕业项目源码和数据库\前端，后台\HCEat\HCEat\obj\Debug\HCEat.csproj.CopyComplete
 D:\海吃海喝\毕业项目源码和数据库\前端，后台\HCEat\HCEat\obj\Debug\HCEat.dll
 D:\海吃海喝\毕业项目源码和数据库\前端，后台\HCEat\HCEat\obj\Debug\HCEat.pdb
+D:\海吃海喝\毕业项目源码和数据库\前端，后台\HCEat\HCEat\obj\Debug\HCEat.csprojAssemblyReference.cache

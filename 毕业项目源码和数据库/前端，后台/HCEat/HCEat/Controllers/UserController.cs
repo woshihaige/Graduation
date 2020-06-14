@@ -21,5 +21,29 @@ namespace HCEat.Controllers
         {
             return View();
         }
+        public ActionResult myInfo1()
+        {
+            return View();
+        }
+        public ActionResult myInfo2()
+        {
+            return View();
+        }
+        public ActionResult myInfo3()
+        {
+            return View();
+        }
+        public ActionResult AddmyInfo3()
+        {
+            return View();
+        }
+        public ActionResult myInfo4()
+        {
+            return View();
+        }
+        public ActionResult myInfo5()
+        {
+            return View();
+        }
     }
 }

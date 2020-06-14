@@ -1,7 +1,9 @@
 ﻿#all {
     width: 100%;
     height: 450px;
-
+    position:absolute;
+    left:0px;
+    bottom:0px;
 }
 
 #foot {
@@ -106,7 +108,7 @@
     height: 50px;
     border-top: 1px solid lightgray;
     margin-top: 20px;
-    margin-top:500px;
+   
 }
 
 .content {
